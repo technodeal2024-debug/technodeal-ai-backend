@@ -1,0 +1,4 @@
+Flask
+flask-cors
+gradio_client
+gunicorn
