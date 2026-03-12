@@ -1,6 +1,7 @@
 import os
 import base64
 import tempfile
+import gc
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from gradio_client import Client, handle_file
@@ -77,3 +78,4 @@ def virtual_try_on():
 if __name__ == '__main__':
     print("Backend Server chalu ho gaya hai! http://localhost:5000 par run kar raha hai.")
     app.run(host='0.0.0.0', port=5000)
+
